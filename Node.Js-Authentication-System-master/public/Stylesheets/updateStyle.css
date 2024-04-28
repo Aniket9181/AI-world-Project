@@ -1,0 +1,136 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0a193d;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/* Styling the header */
+header {
+  padding: 20px;
+}
+
+/* Styling the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent; /* Transparent background */
+  padding: 10px 20px;
+}
+
+/* Styling the logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 50px; /* Adjust as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo span {
+  color: white;
+  font-weight: bold;
+}
+
+/* Styling the navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+.nav_btn {
+  color: white;
+  background-color: #333; /* Dark background */
+  border: none;
+  border-radius: 3vw;
+  padding: 10px 20px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+/* Styling the buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button {
+  color: white;
+  background-color: #333; /* Dark background */
+  border: none;
+  border-radius: 3vw;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.buttons button a {
+  text-decoration: none;
+  color: white;
+}
+/* Styling the main container */
+.hero {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  margin: 5px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+/* Styling the AI update boxes */
+.ai-update {
+  background-color: transparent; /* Transparent white background */
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.ai-update h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.ai-update p {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.ai-update button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ai-update button:hover {
+  background-color: #2980b9;
+}

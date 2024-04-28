@@ -1,0 +1,33 @@
+Why You Shouldn't Trust Al Detectors
+
+EN English (India)
+
+Many teachers aren't happy about the Al revolution, and it's tough to blame therm: ChatGPT has proven you can feed Al a prompt, say for a high school essay, and the Al can spit out a result in seconds. Of course, that essay might be riddled with errors, but, h
+
+Read Full Article
+
+You're Probably Underestimating Al Chatbots
+
+Just as the first iPhone reviews mostly missed the device's huge potential, it's folly to draw conclusions from today's unrefined technology.
+
+Read Full Articke
+
+Tik Tok may have generative Al avatars soon
+
+TikTok may soon let you create Al stylized avatars not unlike what you can with deep learning apps like Midjourney or Lensa, according to a Twitter thread from social media guru Matt Navarra seen by The Verge. Called Al Avatars, the tool lets you upload three...
+
+Read Full Ar
+
+Hollywood writers demand
+
+Luddites had the right of things all the way back in the 1800s. When textile factory owners in early 19th century England used the industrialization of their industry as an excuse to underpay and overwork employees in dangerous, dehumanizing conditions, the s...
+
+Read Full Article
+
+ <button><a href="#" class="live-debate-btn">Live Debate</a></button>
+        <button><a href="#" class="contact-us-btn">Contact</a></button>
+
+.buttons button a {
+  text-decoration: none;
+  color: white;
+}

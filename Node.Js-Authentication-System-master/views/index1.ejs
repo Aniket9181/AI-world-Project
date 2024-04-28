@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI World</title>
+  <!-- StyleSheet Code -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- styling -->
+  <style>
+    /* Resetting default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: white;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+    }
+
+    /* banner of the page */
+    .hero_banner {
+      background-image: url("/Images/background-image.jpeg");
+      background-size: cover;
+      width: 100%;
+      height: 500px;
+    }
+
+    /* Styling the header */
+    header {
+      padding: 20px;
+    }
+
+    /* Styling the navigation bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: transparent;
+      /* Transparent background */
+      padding: 10px 20px;
+    }
+
+    /* Styling the logo */
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 50px;
+      /* Adjust as needed */
+      height: auto;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Styling the navigation links */
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-right: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav_btn {
+      color: white;
+      background-color: #333;
+      /* Dark background */
+      border: none;
+      border-radius: 3vw;
+      padding: 10px 20px;
+      margin-left: 4px;
+      cursor: pointer;
+    }
+
+    /* Styling the buttons */
+    .buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .buttons button {
+      color: white;
+      background-color: #333;
+      /* Dark background */
+      border: none;
+      border-radius: 3vw;
+      padding: 10px 20px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .buttons button a {
+      text-decoration: none;
+      color: white;
+    }
+
+    /* for hero Section or We can call as the main text body */
+    .banner_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .hero_text {
+      font-size: 30px;
+      margin-top: 10px;
+      color: white;
+      font-weight: 800;
+    }
+
+    .hero_text-2 {
+      font-size: 30px;
+      margin-top: 0px;
+      color: white;
+      font-weight: 500;
+    }
+
+    /* our Mission section */
+    .our_mission {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      text-align: center;
+      color: #0a193d;
+      margin-bottom: 30px;
+      border: 2px solid #0a193d;
+      border-radius: 30px;
+      padding: 30px;
+    }
+
+    .our_mission_heading {
+      margin: 20px 10px;
+      font-size: 35px;
+      font-weight: 700;
+    }
+
+    .our_mission_paragraph {
+      width: 80%;
+      font-size: 20px;
+    }
+
+    /* About us Section */
+    .about_us_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+
+      color: #0a193d;
+      margin-bottom: 30px;
+    }
+
+    .about_us_heading {
+      margin: 20px 10px;
+      font-size: 35px;
+      font-weight: 700;
+    }
+
+    .about_us_paragraph {
+      width: 80%;
+    }
+
+    .aboutus_p {
+      font-size: 20px;
+    }
+
+    /* get In touch */
+    .getInTouch {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 10px;
+      color: #0a193d;
+    }
+
+    .getInTouch_heading {
+      margin: 20px 10px;
+      font-size: 35px;
+      font-weight: 700;
+    }
+
+    .getInTouch_link {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .getInTouch_connect_link_main {
+      font-size: 40px;
+      color: #0a193d;
+    }
+
+    /* footer of the Website */
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 50px 20px;
+      gap: 10px;
+      background-color: #0a193d;
+      color: white;
+    }
+
+    .footer_cont {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer h2 {
+      font-size: 25px;
+    }
+
+    #subscription_form {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 5px;
+    }
+
+    #subscription_form p {
+      font-size: 15px;
+      color: #383838;
+    }
+
+    #subscription_form button {
+      width: 30%;
+      padding: 10px;
+      background-color: #1583f9;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #subscription_form button {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero_banner">
+
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="/Images/Logo.jpeg" alt="Logo">
+          <span>AI WORLD</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/" class="nav_btn">Home</a></li>
+          <li><a href="/courses" class="nav_btn">Courses</a></li>
+          <li><a href="/updates" class="nav_btn">Update</a></li>
+          <li><a href="/contact" class="nav_btn">Contact</a></li>
+        </ul>
+        <div class="buttons">
+          <button><a href="#" class="live-debate-btn">Live Debate</a></button>
+          <form action="/logout?_method=DELETE" method="POST">
+            <button class="contact-us-btn" type="submit">Logout</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <section class="banner_text">
+      <p class="hero_text">
+      <h1 class="hero_text">Hello <%= name %>
+      </h1>
+      </p>
+      <p class="hero_text-2">Welcome to AI WORLD</p>
+    </section>
+
+  </section>
+  <section class="our_mission">
+    <h2 class="our_mission_heading">
+      Our Mission
+    </h2>
+    <p class="our_mission_paragraph">
+      The modern world we are heading has a lot of problems like global warming, pandemic and many more but in these we
+      are missing a major problem that might be threat to humans in future. We are taking about AI. It seems like a
+      layman does not known a lot about how advance AI has become SO to make a normal person aware and make people
+      updated about AI. To create our team decided to make a website about the development of AI and pros and cons of
+      AI. The website works on a simple structure. Two parts of website are admin and users. The admin updates and write
+      articles about the recent development of AI, the user
+      can access this and can have a discuss with the admin.
+    </p>
+  </section>
+
+  <!-- About us Section -->
+  <section class="about_us_container">
+    <h2 class="about_us_heading">
+      About Us
+    </h2>
+
+    <ul list="circle" class="about_us_paragraph">
+      <li>
+        <p class="aboutus_p">Making you aware about the recent development in AI field</p>
+      </li>
+      <li>
+        <p class="aboutus_p">Taking and understanding your opinion to on the topic</p>
+      </li>
+      <li>
+        <p class="aboutus_p">For weekly updates do login to our page</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- get In Touch Section -->
+  <section class="getInTouch">
+    <h2 class="getInTouch_heading">
+      Get In Touch
+    </h2>
+    <div class="getInTouch_link">
+      <a href="http://" target="_blank" rel="noopener noreferrer" class="getInTouch_connect_link"><i
+          class="fa-brands fa-linkedin getInTouch_connect_link_main"></i></a>
+      <a href="http://" target="_blank" rel="noopener noreferrer" class="getInTouch_connect_link"><i
+          class="fa-brands fa-pinterest getInTouch_connect_link_main"></i></a>
+      <a href="http://" target="_blank" rel="noopener noreferrer" class="getInTouch_connect_link"><i
+          class="fa-brands fa-square-instagram getInTouch_connect_link_main"></i></a>
+    </div>
+  </section>
+
+  <!-- footer Of the Page -->
+  <section class="footer">
+    <div class="ai_world_discription footer_cont">
+      <h2> AI World</h2>
+      <p>At AIWORLD we belive that customers should always get easy-to-use, best in the kind and fast services. AIWORLD
+        has achieved standards which hepls customer to achieve satisfaction and realize value for their hard earned
+        money</p>
+    </div>
+    <div class="ai_worldContactUs footer_cont">
+      <h2>Contact Us</h2>
+      <p>Call Us - 8866468649</p>
+      <p>Email Us- anilbaraiya1980@gmail.com</p>
+    </div>
+    <div class="ai_world_subscription footer_cont">
+      <h2>Scbscribe to get More Updates</h2>
+      <form action="" method="post " id="subscription_form">
+        <input type="text" name="subscrition_email" id="subscription_email" placeholder="Enter Your Email">
+        <p>We'll never Share Your email with anyone else.</p>
+        <button type="submit">Submit</button>
+
+      </form>
+    </div>
+
+  </section>
+
+  <!-- javaScript Code -->
+  <script src="./script.js"></script>
+</body>
+
+</html>

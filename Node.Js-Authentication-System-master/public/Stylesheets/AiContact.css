@@ -1,0 +1,157 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #0a193d;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+/* Styling the header */
+header {
+  padding: 20px;
+}
+
+/* Styling the navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent; /* Transparent background */
+  padding: 10px 20px;
+}
+
+/* Styling the logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 50px; /* Adjust as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo span {
+  color: white;
+  font-weight: bold;
+}
+
+/* Styling the navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+.nav_btn {
+  color: white;
+  background-color: #333; /* Dark background */
+  border: none;
+  border-radius: 3vw;
+  padding: 10px 20px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+/* Styling the buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button {
+  color: white;
+  background-color: #333; /* Dark background */
+  border: none;
+  border-radius: 3vw;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.buttons button a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Styling the main container */
+.hero {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ContactUS_heading {
+  margin: 5px 5px;
+  color: white;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+/* Contact Us Form */
+.contact_container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+#Ai_contactus_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  width: 50%;
+}
+.form-group {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+label {
+  display: block;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.conatc_us_btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.conatc_us_btn:hover {
+  background-color: #0056b3;
+}
